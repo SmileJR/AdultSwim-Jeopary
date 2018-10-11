@@ -1,0 +1,46 @@
+* {
+    font-family: 'Luckiest Guy', cursive;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+
+#mario{
+    z-index: 1;
+    position: absolute;
+    left: 331px;
+    top: 150px;
+    width: 100px;
+    margin-left: 23%;
+}
+
+#bal1 {
+    z-index: 10;
+    width: 50px;
+    margin-left: 543px;
+
+
+}
+#bal2 {
+    z-index: 20;
+    width: 50px;
+    left: 900px;
+}
+#bal3 {
+    z-index: 30;
+    width: 50px;
+}
+#bal4 {
+    z-index: 40;
+    width: 50px;
+}
+#bal5 {
+    z-index: 50;
+    width: 50px;
+}
+#bal6 {
+    z-index: 60;
+    width: 50px;
+}
