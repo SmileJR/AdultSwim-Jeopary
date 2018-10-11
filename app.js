@@ -24,7 +24,11 @@ console.log(playtime)
 //I need a space for the word to be revealed, thi
 var answer = []
 for (var i = 0; i < playtimeArray.length; i++) {
-    answer[i] = "_"
+    answer[i] = "_ "
+}
+// what the frick
+function great() {
+    $('ul').append(answer)
 }
 
 
