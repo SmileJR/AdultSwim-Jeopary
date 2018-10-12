@@ -1,46 +1,82 @@
-* {
-    font-family: 'Luckiest Guy', cursive;
-}
-h1{
-    font-size: 35px;
-    text-align: center;
+.parent > div {
+    border: solid;
 }
 
-
-#mario{
-    z-index: 1;
-    position: absolute;
-    left: 331px;
-    top: 150px;
-    width: 100px;
-    margin-left: 23%;
+.parent{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   /* I set up how many columns i want to have */
+   grid-template-rows: 150px 75px 75px;
+   /* I set up how many rows i want to have */
+   grid-template-areas:
+   /* name our template section */
+   "child1 child2 child3 child4 child5"
+   "child6 child7 child8 child9 child10"
+   "child11 child12 child13 child14 child15";
+   grid-gap: 10px;
+   padding-top: 50px;
+   padding-right: 10px;
+   padding-left: 10px;
 }
 
-#bal1 {
-    z-index: 10;
-    width: 50px;
-    margin-left: 543px;
+child1{
+    grid-area: child1;
+}
+child2{
+    grid-area: child2;
+}
+child3{
+    grid-area: child3;
+}
+child4{
+    grid-area: child4;
+}
+child5{
+    grid-area: child5;
+}
+child6{
+    grid-area: child6;
+}
+child7{
+    grid-area: child7;
+}
+child8{
+    grid-area: child8;
+}
+child9{
+    grid-area: child9;
+}
+child10{
+    grid-area: child10;
+}
+child11{
+    grid-area: child11;
+}
+child12{
+    grid-area: child12;
+}
+child13{
+    grid-area: child13;
+}
+child14{
+    grid-area: child14;
+}
+child15{
+    grid-area: child15;
+}
 
-
+child16{
+    grid-area: child16;
 }
-#bal2 {
-    z-index: 20;
-    width: 50px;
-    left: 900px;
+child17{
+    grid-area: child17;
 }
-#bal3 {
-    z-index: 30;
-    width: 50px;
+child18{
+    grid-area: child18;
 }
-#bal4 {
-    z-index: 40;
-    width: 50px;
+child19{
+    grid-area: child19;
 }
-#bal5 {
-    z-index: 50;
-    width: 50px;
-}
-#bal6 {
-    z-index: 60;
-    width: 50px;
+child20{
+    grid-area: child20;
 }
