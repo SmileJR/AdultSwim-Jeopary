@@ -6,18 +6,20 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    /* I set up how many columns i want to have */
-   grid-template-rows: 150px 75px 75px;
+   grid-template-rows: 150px 75px 75px 75px;
    /* I set up how many rows i want to have */
    grid-template-areas:
    /* name our template section */
    "child1 child2 child3 child4 child5"
    "child6 child7 child8 child9 child10"
-   "child11 child12 child13 child14 child15";
+   "child11 child12 child13 child14 child15"
+   "child16 child17 child18 child19 child20";
    grid-gap: 10px;
    padding-top: 50px;
    padding-right: 10px;
    padding-left: 10px;
 }
+
 
 child1{
     grid-area: child1;
@@ -79,4 +81,76 @@ child19{
 }
 child20{
     grid-area: child20;
+}
+#c6 {
+    height: 100%;
+    width: 100%;
+}
+
+#c7 {
+    height: 100%;
+    width: 100%;
+}   
+
+#c8 {
+    height: 100%;
+    width: 100%;
+}
+
+#c9 {
+    height: 100%;
+    width: 100%;
+}
+
+#c10 {
+    height: 100%;
+    width: 100%;
+}
+
+#c11 {
+    height: 100%;
+    width: 100%;
+}
+
+#c12 {
+    height: 100%;
+    width: 100%;
+}
+
+#c13 {
+    height: 100%;
+    width: 100%;
+}
+
+#c14 {
+    height: 100%;
+    width: 100%;
+}
+
+#c15 {
+    height: 100%;
+    width: 100%;
+}
+
+#c16 {
+    height: 100%;
+    width: 100%;
+}
+
+#c17 {
+    height: 100%;
+    width: 100%;
+}
+
+#c18 {
+    height: 100%;
+    width: 100%;
+}
+#c19 {
+    height: 100%;
+    width: 100%;
+}
+#c20 {
+    height: 100%;
+    width: 100%;
 }

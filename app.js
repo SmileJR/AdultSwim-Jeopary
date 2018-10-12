@@ -1,3 +1,47 @@
+//First I need to declare my global variables
+txt = "You are correct!"
+score = 0;
+//score is the point system that I will be using
+
+function promptc6(){
+    $("#c6").toggle()
+    var c6answer = prompt("What is the capital of New York?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c6answer == "albany" || c6answer == "Albany") {
+    // if the player does not enter a word or leaves the prompt box blank the game will not play
+
+        function someFunction() {
+            score++;
+         }
+
+        
+    console.log(txt)
+    console.log(score)
+    
+} else {
+    function minus100() {
+
+        console.log("im hiding")
+    }
+}
+}
+
+
+
+
+// $('#score').text(score);
+// function foundMatchingBlocks(event, params) {
+//       params.elements.remove();
+//       score += 100;
+//       $('#score').text(score);
+// }
+
+
+
+
+
+
 // trapped.addEventListener("load", playtime);
 // //First and foremost I need a away to get the word that the player wants to use
 // var playtime = prompt("Please enter the word you want to guess", "enter word here")
