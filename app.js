@@ -1,33 +1,90 @@
+// ===================================VARIABLES=========================================================
 //First I need to declare my global variables
 txt = "You are correct!"
-score = 0;
+var audio = new Audio('timesUp.mp3');
+points = 0;
+var pointsBB = document.querySelector('.pointsBB')
+//let pointsBB = document.querySelector("h2")
 //score is the point system that I will be using
+console.log(pointsBB.innerHTML)
+// ===================================VARIABLES=========================================================
+// ========================================GLOBAL FUNCTIONS====================================================
+//this function will add $100 to the players point bank by manipulating the DOM
+function add100() {
+    points += 100;
+    console.log(points)
+    pointsBB.innerHTML = `$${points}`
+ }
+//this function will subtract $100 from the players point bank by manipulating the DOM
+ function sub100() {
+    points -= 100;
+    console.log(points)
+    pointsBB.innerHTML = `$${points}`
+ }
+//this function will add $300 to the players point bank by manipulating the DOM
+ function add300() {
+    points += 300;
+    console.log(points)
+    pointsBB.innerHTML = `$${points}`
+ }
+//this function will subtract $300 from the players point bank by manipulating the DOM
+ function sub300() {
+    points -= 300;
+    console.log(points)
+    pointsBB.innerHTML = `$${points}`
+ }
+
+ //this function will add $900 to the players point bank by manipulating the DOM
+ function add900() {
+    points += 900;
+    console.log(points)
+    pointsBB.innerHTML = `$${points}`
+ }
+//this function will subtract $900 from the players point bank by manipulating the DOM
+ function sub900() {
+    points -= 900;
+    console.log(points)
+    pointsBB.innerHTML = `$${points}`
+ }
+
+// ========================================GLOBAL FUNCTIONS====================================================
 
 function promptc6(){
     $("#c6").toggle()
     var c6answer = prompt("What is the capital of New York?", "enter your answer here")
 
+//this if statement will allow the player to play the game after entering or not entering a word.
+if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
+
+    add100()
+
+//if the answer is left blank points will be deducted from the point bank    
+} else if (c6answer == null) {
+    sub100();
+    audio.play();
+}
+ else {
+    swal("You are incorrect");
+    sub100();
+}
+}
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function promptc7(){
+    $("#c7").toggle()
+    var c7answer = prompt("What is the capital of atlanta", "enter your answer here")
+
 //this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c6answer == "albany" || c6answer == "Albany") {
+if (c7answer == "you" || c7answer == "YOU" || c7answer == "You") {
     // if the player does not enter a word or leaves the prompt box blank the game will not play
+    // console.log(points += 100)
+    add100()
 
-        function someFunction() {
-            score++;
-         }
-
-        
-    console.log(txt)
-    console.log(score)
     
-} else {
-    function minus100() {
-
-        console.log("im hiding")
-    }
+} else{
+    audio.play();
 }
 }
-
-
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 // $('#score').text(score);

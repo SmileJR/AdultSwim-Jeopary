@@ -2,6 +2,11 @@
     border: solid;
 }
 
+.jeopardy {
+    border: solid;
+    
+  }
+
 .parent{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
