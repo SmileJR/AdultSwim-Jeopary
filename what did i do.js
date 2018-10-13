@@ -1,9 +1,9 @@
 // ===================================VARIABLES=========================================================
 //First I need to declare my global variables
 txt = "You are correct!"
+var audio = new Audio('timesUp.mp3');
 points = 0;
 var pointsBB = document.querySelector('.pointsBB')
-var audio = new Audio('timesUp.mp3');
 //let pointsBB = document.querySelector("h2")
 //score is the point system that I will be using
 console.log(pointsBB.innerHTML)
@@ -49,51 +49,117 @@ function add100() {
 
 // ========================================GLOBAL FUNCTIONS====================================================
 
+
 function promptc6(){
     $("#c6").toggle()
     var c6answer = prompt("What is the capital of New York?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
+//this if statement will allow the player to play the game after entering or not entering a word.
 if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
-    // if the player does not enter a word or leaves the prompt box blank the game will not play
-    // console.log(points += 100)
+
     add100()
 
-    
-} else {
-    sub100()
-    audio.play()
+//if the answer is left blank points will be deducted from the point bank    
+} else if (c6answer == null) {
+    sub100();
+    audio.play();
+}
+ else {
+    swal("You are incorrect");
+    sub100();
+    audio.play();
 }
 }
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function promptc7(){
     $("#c7").toggle()
-    var c7answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c7answer = prompt("What is the capital of New York?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c7answer == "yes" || c7answer == "Yes" || c7answer == "YES") {
+//this if statement will allow the player to play the game after entering or not entering a word.
+if (c7answer == "albany" || c7answer == "Albany" || c7answer == "ALBANY") {
+
     add100()
-    
-} else {
-    sub100()
-    audio.play()
+
+//if the answer is left blank points will be deducted from the point bank    
+} else if (c7answer == null) {
+    sub100();
+    audio.play();
+}
+ else {
+    swal("You are incorrect");
+    sub100();
+    audio.play();
 }
 }
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function promptc8(){
     $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c8answer = prompt("What is the capital of New York?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+//this if statement will allow the player to play the game after entering or not entering a word.
+if (c8answer == "albany" || c8answer == "Albany" || c8answer == "ALBANY") {
+
     add100()
-    
-} else {
-    sub100()
-    audio.play()
+
+//if the answer is left blank points will be deducted from the point bank    
+} else if (c8answer == null) {
+    sub100();
+    audio.play();
+}
+ else {
+    swal("You are incorrect");
+    sub100();
+    audio.play();
 }
 }
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function promptc9(){
+    $("#c9").toggle()
+    var c9answer = prompt("What is the capital of New York?", "enter your answer here")
+
+//this if statement will allow the player to play the game after entering or not entering a word.
+if (c9answer == "albany" || c9answer == "Albany" || c9answer == "ALBANY") {
+
+    add100()
+
+//if the answer is left blank points will be deducted from the point bank    
+} else if (c9answer == null) {
+    sub100();
+    audio.play();
+}
+ else {
+    swal("You are incorrect");
+    sub100();
+    audio.play();
+}
+}
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function promptc10(){
+    $("#c10").toggle()
+    var c10answer = prompt("What is the capital of New York?", "enter your answer here")
+
+//this if statement will allow the player to play the game after entering or not entering a word.
+if (c10answer == "albany" || c10answer == "Albany" || c10answer == "ALBANY") {
+
+    add100()
+
+//if the answer is left blank points will be deducted from the point bank    
+} else if (c10answer == null) {
+    sub100();
+    audio.play();
+}
+ else {
+    swal("You are incorrect");
+    sub100();
+    audio.play();
+}
+}
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 // $('#score').text(score);
 // function foundMatchingBlocks(event, params) {
