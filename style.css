@@ -11,7 +11,7 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    /* I set up how many columns i want to have */
-   grid-template-rows: 150px 75px 75px 75px;
+   grid-template-rows: 150px 115px 115px 115px;
    /* I set up how many rows i want to have */
    grid-template-areas:
    /* name our template section */

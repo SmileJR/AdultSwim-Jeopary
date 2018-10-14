@@ -3,7 +3,7 @@
 txt = "You are correct!"
 points = 0;
 var pointsBB = document.querySelector('.pointsBB')
-var audio = new Audio('timesUp.mp3');
+var audio = new Audio('sound/timesUp.mp3');
 //let pointsBB = document.querySelector("h2")
 //score is the point system that I will be using
 console.log(pointsBB.innerHTML)
@@ -95,12 +95,13 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// DONE
 function promptc9(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+    $("#c9").toggle()
+    var c9answer = prompt("What was the original title for the show Metalocalypse?", "enter your answer here")
 
 //this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c9answer == "deathclock" || c9answer == "Deathclock" || c9answer == "DEATHCLOCK") {
     add100()
     
 } else {
@@ -109,12 +110,13 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//DONE
 function promptc10(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+    $("#c10").toggle()
+    var c8answer = prompt("How many years has [adult swim] been on air?", "enter your answer here")
 
 //this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c10answer == "17" || c10answer == "17 years" || c10answer == "17 YEARS") {
     add100()
     
 } else {
@@ -122,4 +124,148 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     audio.play()
 }
 }
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// +++++++++++++++++++++++++++++++++++++ $300 Questions +++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add300()
+    
+} else {
+    sub300()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add300()
+    
+} else {
+    sub300()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add300()
+    
+} else {
+    sub300()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add300()
+    
+} else {
+    sub300()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
+function promptc15(){
+    $("#c15").toggle()
+    var c15answer = prompt("What message displayed on the first [as] bump?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c15answer == "Hello" || c15answer == "HELLO" || c15answer == "hello") {
+    add300()
+    
+} else {
+    sub300()
+    audio.play()
+}
+}
+
+// ++++++++++++++++++++++++++++++++++++++ $900 Questions +++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add900()
+    
+} else {
+    sub900()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add900()
+    
+} else {
+    sub900()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add900()
+    
+} else {
+    sub900()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+function promptc8(){
+    $("#c8").toggle()
+    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    add900()
+    
+} else {
+    sub900()
+    audio.play()
+}
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
+function promptc20(){
+    $("#c20").toggle()
+    var c20answer = prompt("Will you ever outgrow watching [adult swim] programming?", "enter your answer here")
+
+//this if statement will allow the player to start playing the game after entering or not entering a word.
+if (c20answer == "no" || c20answer == "NO" || c20answer == "No") {
+    add900()
+    
+} else {
+    sub900()
+    audio.play()
+}
+}
+// +++++++++++++++++++++++++++++++++++++++END OF QUESTION CODE+++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
