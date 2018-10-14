@@ -4,6 +4,7 @@ txt = "You are correct!"
 points = 0;
 var pointsBB = document.querySelector('.pointsBB')
 var audio = new Audio('sound/timesUp.mp3');
+var audio2 = new Audio('sound/correct.mp3')
 //let pointsBB = document.querySelector("h2")
 //score is the point system that I will be using
 console.log(pointsBB.innerHTML)
@@ -59,25 +60,38 @@ if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
     // if the player does not enter a word or leaves the prompt box blank the game will not play
     // console.log(points += 100)
     add100()
+    audio2.play()
 
     
 } else {
     sub100()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc7(){
     $("#c7").toggle()
-    var c7answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c7answer = prompt("How old is Meatwad?", "enter your answer here")
 
 //this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c7answer == "yes" || c7answer == "Yes" || c7answer == "YES") {
+if (c7answer == "6" || c7answer == "6 years old") {
     add100()
+    audio2.play()
     
 } else {
     sub100()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -88,10 +102,16 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add100()
-    
+    audio2.play()   
+
 } else {
     sub100()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
@@ -103,25 +123,42 @@ function promptc9(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c9answer == "deathclock" || c9answer == "Deathclock" || c9answer == "DEATHCLOCK") {
     add100()
+    audio2.play()
     
 } else {
     sub100()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 //DONE
 function promptc10(){
     $("#c10").toggle()
-    var c8answer = prompt("How many years has [adult swim] been on air?", "enter your answer here")
+    var c10answer = prompt("How many years has [adult swim] been on air?", "enter your answer here")
 
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c10answer == "17" || c10answer == "17 years" || c10answer == "17 YEARS") {
     add100()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub100()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 
@@ -133,10 +170,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add300()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub300()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -147,10 +195,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add300()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub300()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -161,10 +220,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add300()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub300()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -175,10 +245,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add300()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub300()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -190,10 +271,21 @@ function promptc15(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c15answer == "Hello" || c15answer == "HELLO" || c15answer == "hello") {
     add300()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub300()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 
@@ -205,10 +297,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add900()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub900()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -219,10 +322,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add900()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub900()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -233,10 +347,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add900()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub900()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -247,10 +372,21 @@ function promptc8(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
     add900()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub900()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -262,10 +398,21 @@ function promptc20(){
 //this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c20answer == "no" || c20answer == "NO" || c20answer == "No") {
     add900()
+    audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub900()
     audio.play()
+    swal({
+        type: 'error',
+        title: 'Sorry, thats incorrect.',
+        text: 'Better luck next time!'
+      })
 }
 }
 // +++++++++++++++++++++++++++++++++++++++END OF QUESTION CODE+++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
