@@ -14,38 +14,38 @@ console.log(pointsBB.innerHTML)
 function add100() {
     points += 100;
     console.log(points)
-    pointsBB.innerHTML = `$${points}`
+    pointsBB.innerHTML = `<center>$${points}</center>`
  }
 //this function will subtract $100 from the players point bank by manipulating the DOM
  function sub100() {
     points -= 100;
     console.log(points)
-    pointsBB.innerHTML = `$${points}`
+    pointsBB.innerHTML = `<center>$${points}</center>`
  }
 //this function will add $300 to the players point bank by manipulating the DOM
  function add300() {
     points += 300;
     console.log(points)
-    pointsBB.innerHTML = `$${points}`
+    pointsBB.innerHTML = `<center>$${points}</center>`
  }
 //this function will subtract $300 from the players point bank by manipulating the DOM
  function sub300() {
     points -= 300;
     console.log(points)
-    pointsBB.innerHTML = `$${points}`
+    pointsBB.innerHTML = `<center>$${points}</center>`
  }
 
  //this function will add $900 to the players point bank by manipulating the DOM
  function add900() {
     points += 900;
     console.log(points)
-    pointsBB.innerHTML = `$${points}`
+    pointsBB.innerHTML = `<center>$${points}</center>`
  }
 //this function will subtract $900 from the players point bank by manipulating the DOM
  function sub900() {
     points -= 900;
     console.log(points)
-    pointsBB.innerHTML = `$${points}`
+    pointsBB.innerHTML = `<center>$${points}</center>`
  }
 
 // ========================================GLOBAL FUNCTIONS====================================================
@@ -208,9 +208,10 @@ if (c11answer == "Cheeseburger" || c11answer == "cheesburger" || c11answer == "C
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc12(){
     $("#c12").toggle()
-    var c12answer = prompt("In the episode what did the werewolf need help blowing up?", "enter your answer here")
+    var c12answer = prompt("In the episode Drewbacca, what did need help blowing up?", "enter your answer here")
 
 if (c12answer == "moon" || c12answer == "The moon" || c12answer == "THE MOON") {
     add300()
@@ -232,11 +233,12 @@ if (c12answer == "moon" || c12answer == "The moon" || c12answer == "THE MOON") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc13(){
     $("#c13").toggle()
-    var c13answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c13answer = prompt("SHOW ME WHAT YOU...", "enter your answer here")
 
-if (c13answer == "yes" || c13answer == "Yes" || c13answer == "YES") {
+if (c13answer == "got" || c13answer == "GOT" || c13answer == "Got") {
     add300()
     audio2.play()
     swal(
@@ -256,11 +258,12 @@ if (c13answer == "yes" || c13answer == "Yes" || c13answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc14(){
     $("#c14").toggle()
-    var c14answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c14answer = prompt("Who are the brutal overseers of the band's various properties and the roadies for their concerts", "enter your answer here")
 
-if (c14answer == "yes" || c14answer == "Yes" || c14answer == "YES") {
+if (c14answer == "Klokateers" || c14answer == "klokateers" || c14answer == "KLOKATEERS") {
     add300()
     audio2.play()
     swal(
@@ -331,11 +334,12 @@ if (c16answer == "Jared" || c16answer == "jared" || c16answer == "JARED") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc17(){
     $("#c17").toggle()
-    var c17answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c17answer = prompt("Aqua Teen Hunger Force is a spin-off of what tv show?", "enter your answer here")
 
-if (c17answer == "yes" || c17answer == "Yes" || c17answer == "YES") {
+if (c17answer == "Space Ghost Coast to Coast" || c17answer == "Space Ghost" || c17answer == "space ghost") {
     add900()
     audio2.play()
     swal(
@@ -355,11 +359,12 @@ if (c17answer == "yes" || c17answer == "Yes" || c17answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc18(){
     $("#c18").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c8answer = prompt("What is the occupation of Ricks daughter Beth?", "enter your answer here")
 
-if (c18answer == "yes" || c18answer == "Yes" || c18answer == "YES") {
+if (c18answer == "veterinary surgeon" || c18answer == "surgeon" || c18answer == "veterinarian" || c18answer == "vet") {
     add900()
     audio2.play()
     swal(
@@ -379,11 +384,12 @@ if (c18answer == "yes" || c18answer == "Yes" || c18answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc19(){
     $("#c19").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c8answer = prompt("What is the name of the animated version of the Dethklok logo", "enter your answer here")
 
-if (c19answer == "yes" || c19answer == "Yes" || c19answer == "YES") {
+if (c19answer == "facebones" || c19answer == "Facebones" || c19answer == "FACEBONES") {
     add900()
     audio2.play()
     swal(
