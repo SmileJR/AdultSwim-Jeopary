@@ -51,12 +51,13 @@ function add100() {
 // ========================================GLOBAL FUNCTIONS====================================================
 
 // +++++++++++++++++++++++++++++++++++ $100 Questions +++++++++++++++++++++++++++++++++++++++++++++
+// DONE
 function promptc6(){
     $("#c6").toggle()
-    var c6answer = prompt("What is the capital of New York?", "enter your answer here")
+    var c6answer = prompt("Who is the main protagonist of superjail?", "enter your answer here")
 
 //this if statement will whether the players answer is correct or not
-if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
+if (c6answer == "The Warden" || c6answer == "the warden" || c6answer == "Warden" || c6answer == "warden") {
 //if the players answer is equivilant to any of the option above 100 points will be added to their point bank
     add100()
 //a sound will play    
@@ -67,8 +68,7 @@ if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
         'You are correct!',
         'success'
       )
-
-    
+ 
 } else {
 //if the players answer is anything besides the 3 options above 100 points will be deducted from thier point bank    
     sub100()
@@ -87,6 +87,7 @@ if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
 function promptc7(){
     $("#c7").toggle()
     var c7answer = prompt("How old is Meatwad?", "enter your answer here")
+
 if (c7answer == "6" || c7answer == "6 years old") {
     add100()
     audio2.play()
@@ -110,6 +111,7 @@ if (c7answer == "6" || c7answer == "6 years old") {
 function promptc8(){
     $("#c8").toggle()
     var c8answer = prompt("Who is the mad scientist, Ricky or Morty?", "enter your answer here")
+
 if (c8answer == "rick" || c8answer == "RICK" || c8answer == "Rick") {
     add100()
     audio2.play()   
@@ -181,11 +183,12 @@ if (c10answer == "17" || c10answer == "17 years" || c10answer == "17 YEARS") {
 }
 
 // +++++++++++++++++++++++++++++++++++++ $300 Questions +++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc11(){
     $("#c11").toggle()
-    var c11answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c11answer = prompt("The theme song 'Comin' Home' is performed by whom?", "enter your answer here")
 
-if (c11answer == "yes" || c11answer == "Yes" || c11answer == "YES") {
+if (c11answer == "Cheeseburger" || c11answer == "cheesburger" || c11answer == "CHEESEBURGER") {
     add300()
     audio2.play()
     swal(
@@ -207,9 +210,9 @@ if (c11answer == "yes" || c11answer == "Yes" || c11answer == "YES") {
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 function promptc12(){
     $("#c12").toggle()
-    var c12answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c12answer = prompt("In the episode what did the werewolf need help blowing up?", "enter your answer here")
 
-if (c12answer == "yes" || c12answer == "Yes" || c12answer == "YES") {
+if (c12answer == "moon" || c12answer == "The moon" || c12answer == "THE MOON") {
     add300()
     audio2.play()
     swal(
@@ -303,11 +306,12 @@ if (c15answer == "Hello" || c15answer == "HELLO" || c15answer == "hello") {
 }
 
 // ++++++++++++++++++++++++++++++++++++++ $900 Questions +++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc16(){
     $("#c16").toggle()
-    var c16answer = prompt("Do you like gangster shit?", "enter your answer here")
+    var c16answer = prompt("All of the humans on SuperJail are drawn with 5 fingers, except for this character", "enter your answer here")
 
-if (c16answer == "yes" || c16answer == "Yes" || c16answer == "YES") {
+if (c16answer == "Jared" || c16answer == "jared" || c16answer == "JARED") {
     add900()
     audio2.play()
     swal(
@@ -330,6 +334,7 @@ if (c16answer == "yes" || c16answer == "Yes" || c16answer == "YES") {
 function promptc17(){
     $("#c17").toggle()
     var c17answer = prompt("Do you like gangster shit?", "enter your answer here")
+
 if (c17answer == "yes" || c17answer == "Yes" || c17answer == "YES") {
     add900()
     audio2.play()
