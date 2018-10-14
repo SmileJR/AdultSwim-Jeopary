@@ -55,17 +55,26 @@ function promptc6(){
     $("#c6").toggle()
     var c6answer = prompt("What is the capital of New York?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
+//this if statement will whether the players answer is correct or not
 if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
-    // if the player does not enter a word or leaves the prompt box blank the game will not play
-    // console.log(points += 100)
+//if the players answer is equivilant to any of the option above 100 points will be added to their point bank
     add100()
+//a sound will play    
     audio2.play()
+// and a sweet alert indicating that they are correct will display    
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
 
     
 } else {
+//if the players answer is anything besides the 3 options above 100 points will be deducted from thier point bank    
     sub100()
+//a different sound will play    
     audio.play()
+// and a sweet alert indicating that the answer was incorrect will display    
     swal({
         type: 'error',
         title: 'Sorry, thats incorrect.',
@@ -78,12 +87,14 @@ if (c6answer == "albany" || c6answer == "Albany" || c6answer == "ALBANY") {
 function promptc7(){
     $("#c7").toggle()
     var c7answer = prompt("How old is Meatwad?", "enter your answer here")
-
-//this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c7answer == "6" || c7answer == "6 years old") {
     add100()
     audio2.play()
-    
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )    
 } else {
     sub100()
     audio.play()
@@ -95,14 +106,18 @@ if (c7answer == "6" || c7answer == "6 years old") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// DONE
 function promptc8(){
     $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
-
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+    var c8answer = prompt("Who is the mad scientist, Ricky or Morty?", "enter your answer here")
+if (c8answer == "rick" || c8answer == "RICK" || c8answer == "Rick") {
     add100()
     audio2.play()   
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
 
 } else {
     sub100()
@@ -120,10 +135,14 @@ function promptc9(){
     $("#c9").toggle()
     var c9answer = prompt("What was the original title for the show Metalocalypse?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c9answer == "deathclock" || c9answer == "Deathclock" || c9answer == "DEATHCLOCK") {
     add100()
     audio2.play()
+    swal(
+        'Nice!',
+        'You are correct!',
+        'success'
+      )
     
 } else {
     sub100()
@@ -141,7 +160,6 @@ function promptc10(){
     $("#c10").toggle()
     var c10answer = prompt("How many years has [adult swim] been on air?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c10answer == "17" || c10answer == "17 years" || c10answer == "17 YEARS") {
     add100()
     audio2.play()
@@ -157,18 +175,17 @@ if (c10answer == "17" || c10answer == "17 years" || c10answer == "17 YEARS") {
     swal({
         type: 'error',
         title: 'Sorry, thats incorrect.',
-        text: 'Better luck next time!'
+        text: 'Better luck next time!',
       })
 }
 }
 
 // +++++++++++++++++++++++++++++++++++++ $300 Questions +++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+function promptc11(){
+    $("#c11").toggle()
+    var c11answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c11answer == "yes" || c11answer == "Yes" || c11answer == "YES") {
     add300()
     audio2.play()
     swal(
@@ -188,12 +205,11 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+function promptc12(){
+    $("#c12").toggle()
+    var c12answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c12answer == "yes" || c12answer == "Yes" || c12answer == "YES") {
     add300()
     audio2.play()
     swal(
@@ -213,12 +229,11 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+function promptc13(){
+    $("#c13").toggle()
+    var c13answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c13answer == "yes" || c13answer == "Yes" || c13answer == "YES") {
     add300()
     audio2.play()
     swal(
@@ -238,12 +253,11 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+function promptc14(){
+    $("#c14").toggle()
+    var c14answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c14answer == "yes" || c14answer == "Yes" || c14answer == "YES") {
     add300()
     audio2.play()
     swal(
@@ -268,7 +282,6 @@ function promptc15(){
     $("#c15").toggle()
     var c15answer = prompt("What message displayed on the first [as] bump?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c15answer == "Hello" || c15answer == "HELLO" || c15answer == "hello") {
     add300()
     audio2.play()
@@ -290,12 +303,11 @@ if (c15answer == "Hello" || c15answer == "HELLO" || c15answer == "hello") {
 }
 
 // ++++++++++++++++++++++++++++++++++++++ $900 Questions +++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
+function promptc16(){
+    $("#c16").toggle()
+    var c16answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c16answer == "yes" || c16answer == "Yes" || c16answer == "YES") {
     add900()
     audio2.play()
     swal(
@@ -315,12 +327,10 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
-    var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
-
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+function promptc17(){
+    $("#c17").toggle()
+    var c17answer = prompt("Do you like gangster shit?", "enter your answer here")
+if (c17answer == "yes" || c17answer == "Yes" || c17answer == "YES") {
     add900()
     audio2.play()
     swal(
@@ -340,12 +350,11 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
+function promptc18(){
+    $("#c18").toggle()
     var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c18answer == "yes" || c18answer == "Yes" || c18answer == "YES") {
     add900()
     audio2.play()
     swal(
@@ -365,12 +374,11 @@ if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
 }
 }
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-function promptc8(){
-    $("#c8").toggle()
+function promptc19(){
+    $("#c19").toggle()
     var c8answer = prompt("Do you like gangster shit?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
-if (c8answer == "yes" || c8answer == "Yes" || c8answer == "YES") {
+if (c19answer == "yes" || c19answer == "Yes" || c19answer == "YES") {
     add900()
     audio2.play()
     swal(
@@ -395,7 +403,6 @@ function promptc20(){
     $("#c20").toggle()
     var c20answer = prompt("Will you ever outgrow watching [adult swim] programming?", "enter your answer here")
 
-//this if statement will allow the player to start playing the game after entering or not entering a word.
 if (c20answer == "no" || c20answer == "NO" || c20answer == "No") {
     add900()
     audio2.play()
