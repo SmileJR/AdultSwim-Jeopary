@@ -17,38 +17,38 @@ var audio2 = new Audio('sound/correct.mp3')
 function add100() {
     points += 100;
     console.log(points)
-    pointsBB.innerHTML = `<center>$${points}</center>`
+    pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 //this function will subtract $100 from the players point bank by manipulating the DOM
  function sub100() {
     points -= 100;
     console.log(points)
-    pointsBB.innerHTML = `<center>$${points}</center>`
+    pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 //this function will add $300 to the players point bank by manipulating the DOM
  function add300() {
     points += 300;
     console.log(points)
-    pointsBB.innerHTML = `<center>$${points}</center>`
+    pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 //this function will subtract $300 from the players point bank by manipulating the DOM
  function sub300() {
     points -= 300;
     console.log(points)
-    pointsBB.innerHTML = `<center>$${points}</center>`
+    pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 
  //this function will add $900 to the players point bank by manipulating the DOM
  function add900() {
     points += 900;
     console.log(points)
-    pointsBB.innerHTML = `<center>$${points}</center>`
+    pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 //this function will subtract $900 from the players point bank by manipulating the DOM
  function sub900() {
     points -= 900;
     console.log(points)
-    pointsBB.innerHTML = `<center>$${points}</center>`
+    pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 
 
