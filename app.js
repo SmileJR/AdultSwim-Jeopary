@@ -55,19 +55,23 @@ function add100() {
  }
 
  function results(){
+     //this function is used at the users request
+     //it uses an if else statement to determine whether or not the player has won the game
 if (points > 0) {
+    //as long as the player has andything over $0 in their point bank they are a winner
+    //the standard is extremely low in my jeopardy game
     winner.play()
     swal({
         title: "YOU WIN!",
-        text: "Scream it from the rooftops Winner",
+        text: "Scream it from the rooftops Winner! You are a champion and a scholar!",
         imageUrl: "https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887"
       });
 } else {
     loser.play()
     swal({
-        title: "Youre a loser",
+        title: "You're a loser",
         text: "But it's not because you lost the game",
-        imageUrl: "https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887"
+        imageUrl: 'https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887'
       });
 
 }
@@ -102,10 +106,9 @@ if (c6answer == "The Warden" || c6answer == "the warden" || c6answer == "Warden"
 // and a sweet alert indicating that the answer was incorrect will display    
  
 swal({
-    type: 'error',
     title: 'Sorry, thats incorrect.',
     text: 'Better luck next time!',
-
+    type: 'error',
   })    
 
 
