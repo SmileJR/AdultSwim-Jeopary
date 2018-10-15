@@ -9,6 +9,10 @@ body{
     border-image-slice: 30;
     background-color: black;
 }
+#pointsAA {
+    background: black;
+    
+}
 .parent > div {
     border: solid;
     background: black;
@@ -28,6 +32,8 @@ body{
 }
 .jeopardy {
     border: solid;
+    background: black;
+
     
     
 }

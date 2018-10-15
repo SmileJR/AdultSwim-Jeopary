@@ -2,13 +2,16 @@
 //First I need to declare my global variables
 txt = "You are correct!"
 points = 0;
+// points is the starting score on the scoreboard, the counter starts at 0
 var pointsBB = document.querySelector('.pointsBB')
+// pointsBB is whre the points get added to and manipulte the DOM
 var audio = new Audio('sound/timesUp.mp3');
+// audio is the sound that plays if you get an answer wrong or dont enter an answer
 var audio2 = new Audio('sound/correct.mp3')
-//let pointsBB = document.querySelector("h2")
-//score is the point system that I will be using
-console.log(pointsBB.innerHTML)
+// audio2 is the sound that plays if you get an answer correct
 // ===================================VARIABLES=========================================================
+
+
 // ========================================GLOBAL FUNCTIONS====================================================
 //this function will add $100 to the players point bank by manipulating the DOM
 function add100() {
@@ -48,7 +51,26 @@ function add100() {
     pointsBB.innerHTML = `<center>$${points}</center>`
  }
 
-// ========================================GLOBAL FUNCTIONS====================================================
+
+ var Move = () => {
+    // hey get this bluebox and assign a variable to it so we can talk to it
+    var box = document.getElementById("meat");
+    var position = 0;
+    var interval = setInterval(frame, 3); // Run the function "frame" for 5000 milliseconds frame is a function that we havent made yet
+    function frame() {
+        // if this position gets up to 350px STOP/Clear the interval of the variable called "interval"
+    if (position == 350) {
+        clearInterval(interval); 
+
+        }else{
+            position++;
+            box.style.top = position + 'px'; // variable "box" is going to be styled to a new top margin = to a new position from the top margin of (how many? px)   
+            box.style.left = position + 'px'; // variable "box" is going to be styled to a new left margin = to a new position from the top margin of (how many? px)    
+        }
+    }
+
+}
+// ======================================== END GLOBAL FUNCTIONS====================================================
 
 // +++++++++++++++++++++++++++++++++++ $100 Questions +++++++++++++++++++++++++++++++++++++++++++++
 // DONE
