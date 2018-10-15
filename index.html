@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 <!-- wireframe location https://wireframe.cc/Nmc2B5 -->
     <h1 id="jpd">
-     <center>JEOPARDY!!!</center>   
+     <center>[as] jeopardy</center>   
     </h1>
     <div class="pointsBB" id="pointsAA"><center><h3 id="points">$0</h3></center></div>
 
     <div class="parent">
         <!-- categories -->
-        <div class="child1">SUPERJAIL</div>
-        <div class="child2">AQUA TEEN</div>
-        <div class="child3">RICK AND MORTY</div>
-        <div class="child4">METALOCALYPSE</div>
-        <div class="child5">ADULT SWIM</div>
+        <div class="child1" id="category">[superjail]</div>
+        <div class="child2" id="category">[aquateen]</div>
+        <div class="child3" id="category">[rick & morty]</div>
+        <div class="child4" id="category">[metalocalypse]</div>
+        <div class="child5" id="category">[adult swim]</div>
         <!-- buttons -->
         <div class="child6"><button id="c6" class="child6 btn btn-light" onclick="promptc6()">$100</button></div>
         <div class="child7"><button id="c7" class="child7 btn btn-light" onclick="promptc7()">$100</button></div>
@@ -42,6 +43,7 @@
         <div class="child18"><button id="c18" class="child18 btn btn-dark" onclick="promptc18()">$900</button></div>
         <div class="child19"><button id="c19" class="child19 btn btn-dark" onclick="promptc19()">$900</button></div>
         <div class="child20"><button id="c20" class="child20 btn btn-dark" onclick="promptc20()">$900</button></div>
+    </div>
     
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

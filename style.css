@@ -1,14 +1,36 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    border: 15px solid transparent;
+    border-image-source: url(images/border05.gif);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+    background-color: black;
+}
 .parent > div {
     border: solid;
+    background: black;
+
+}
+#category {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 33px;
+    padding-top: 19%;
 }
 
 #jpd{
     font-size: 100px;
+    color: whitesmoke;
+    background: black;
 }
 .jeopardy {
     border: solid;
     
-  }
+    
+}
 
 .parent{
    display: grid;
