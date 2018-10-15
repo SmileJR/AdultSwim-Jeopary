@@ -53,6 +53,10 @@ body{
 #pointsBB {
     background: yellow;
 }
+.res {
+    background-color: black;
+    color: whitesmoke;
+} 
 
 .parent{
    display: grid;

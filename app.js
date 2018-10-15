@@ -54,9 +54,9 @@ function add100() {
  function results(){
     
 if (points > 0) {
-    sswal({
-        title: 'Sweet!',
-        text: 'YOU WON!',
+    swal({
+        title: 'YOU WON!',
+        text: 'Yippeeeeeee!',
         imageUrl: 'https://files.gamebanana.com/img/ico/sprays/594394bd754a7.gif',
         imageWidth: 400,
         imageHeight: 200,
@@ -64,11 +64,7 @@ if (points > 0) {
         animation: false
       })  
 } else {
-    swal({
-        type: 'error',
-        title: 'YOU LOSE!',
-        text: 'Sorry bud...'
-      })
+    sweetAlert("Oops...", "Something went wrong!", "error");
 }
 }
 
