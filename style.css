@@ -16,6 +16,7 @@ body{
     border-image-repeat: repeat;
     border-image-slice: 30;
     background-color: black;
+
     
 }
 .parent > div {
@@ -39,6 +40,7 @@ body{
     font-size: 100px;
     color: whitesmoke;
     background: black;
+
 }
 .jeopardy {
     border: solid 3px;
@@ -48,7 +50,9 @@ body{
 #points{
     color: whitesmoke;
 }
-
+#pointsBB {
+    background: yellow;
+}
 
 .parent{
    display: grid;

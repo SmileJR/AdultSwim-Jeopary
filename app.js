@@ -51,6 +51,26 @@ function add100() {
     pointsBB.innerHTML = `<center><h3 id="points">$${points}</h3></center>`
  }
 
+ function results(){
+    
+if (points > 0) {
+    sswal({
+        title: 'Sweet!',
+        text: 'YOU WON!',
+        imageUrl: 'https://files.gamebanana.com/img/ico/sprays/594394bd754a7.gif',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'a gif animationof a meatball dancing',
+        animation: false
+      })  
+} else {
+    swal({
+        type: 'error',
+        title: 'YOU LOSE!',
+        text: 'Sorry bud...'
+      })
+}
+}
 
 // ======================================== END GLOBAL FUNCTIONS====================================================
 
