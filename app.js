@@ -10,6 +10,8 @@ var audio = new Audio('sound/timesUp.mp3');
 var audio2 = new Audio('sound/correct.mp3')
 // audio2 is the sound that plays if you get an answer correct
 var winner = new Audio('sound/applause.mp3')
+//winner is the sound that plays if the user wins the game
+var loser = new Audio('sound/loser')
 // ===================================VARIABLES=========================================================
 
 
@@ -61,6 +63,7 @@ if (points > 0) {
         imageUrl: "https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887"
       });
 } else {
+    loser.play()
     swal({
         title: "Youre a loser",
         text: "But it's not because you lost the game",
