@@ -52,19 +52,19 @@ function add100() {
  }
 
  function results(){
-    
-if (points > 0) {
+if (pointsBB > 1) {
     swal({
-        title: 'YOU WON!',
-        text: 'Yippeeeeeee!',
-        imageUrl: 'https://files.gamebanana.com/img/ico/sprays/594394bd754a7.gif',
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'a gif animationof a meatball dancing',
-        animation: false
-      })  
+        title: "YOU WIN!",
+        text: "Scream it from the rooftops Winner",
+        imageUrl: "https://files.gamebanana.com/img/ico/sprays/594394bd754a7.gif"
+      });
 } else {
-    sweetAlert("Oops...", "Something went wrong!", "error");
+    swal({
+        title: "Youre a loser",
+        text: "But it's not because you lost the game",
+        imageUrl: "https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887"
+      });
+
 }
 }
 
@@ -95,13 +95,23 @@ if (c6answer == "The Warden" || c6answer == "the warden" || c6answer == "Warden"
 //a different sound will play    
     audio.play()
 // and a sweet alert indicating that the answer was incorrect will display    
-    swal({
-        type: 'error',
-        title: 'Sorry, thats incorrect.',
-        text: 'Better luck next time!'
-      })
+ 
+swal({
+    type: 'error',
+    title: 'Sorry, thats incorrect.',
+    text: 'Better luck next time!',
+
+  })    
+
+
+// swal({
+//         type: 'error',
+//         title: 'Sorry, thats incorrect.',
+//         text: 'Better luck next time!'
+//       })
 }
 }
+
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 // DONE
 function promptc7(){
