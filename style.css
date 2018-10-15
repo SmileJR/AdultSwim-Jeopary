@@ -57,6 +57,9 @@ body{
     background-color: black;
     color: whitesmoke;
 } 
+.resoutter {
+    background: black;
+}
 
 .parent{
    display: grid;

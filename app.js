@@ -70,7 +70,7 @@ if (points > 0) {
     loser.play()
     swal({
         title: "You're a loser",
-        text: "But it's not because you lost the game",
+        text: "But don't worry, it's not because you lost the game",
         imageUrl: 'https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887'
       });
 
