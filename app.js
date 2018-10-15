@@ -62,10 +62,15 @@ if (points > 0) {
     //the standard is extremely low in my jeopardy game
     winner.play()
     swal({
-        title: "YOU WIN!",
-        text: "Scream it from the rooftops Winner! You are a champion and a scholar!",
-        imageUrl: "https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887"
-      });
+        position: 'top-end',
+        type: 'success',
+        title: 'YOU WON',
+        text: "You are a gentleman/woman and a scholar!",
+        showConfirmButton: false,
+        timer: 2000,
+        //i cant figure out why my images arent showing up for my modal with is unfortunate
+        imageUrl: 'images/meatgif.gif',
+      })
 } else {
     loser.play()
     swal({
