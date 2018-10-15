@@ -11,11 +11,21 @@ body{
 }
 #pointsAA {
     background: black;
+    border: 15px solid transparent;
+    border-image-source: url(images/border05.gif);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+    background-color: black;
     
 }
 .parent > div {
     border: solid;
     background: black;
+    border: 5px solid transparent;
+    border-image-source: url(images/border05.gif);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+    background-color: black;
 
 }
 #category {
@@ -31,7 +41,7 @@ body{
     background: black;
 }
 .jeopardy {
-    border: solid;
+    border: solid 3px;
     background: black;
     
 }
@@ -51,9 +61,10 @@ body{
    "child11 child12 child13 child14 child15"
    "child16 child17 child18 child19 child20";
    grid-gap: 10px;
-   padding-top: 50px;
+   padding-top: 3px;
    padding-right: 10px;
    padding-left: 10px;
+   background: black;
 }
 
 
