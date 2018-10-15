@@ -7,7 +7,7 @@ The app is a quiz game that consists of 15 squares. When a square is clicked a q
 
 
 LINK TO DEPLOYED APP
-http://relaxed-newton-22336c.netlify.com
+https://app.netlify.com/drop/goofy-raman-b6ee14
 
 LINK TO TRELLO BOARD
 https://trello.com/b/7IuBzbpj/project-1
