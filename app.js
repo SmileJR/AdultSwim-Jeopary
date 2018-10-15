@@ -52,24 +52,6 @@ function add100() {
  }
 
 
- var Move = () => {
-    // hey get this bluebox and assign a variable to it so we can talk to it
-    var box = document.getElementById("meat");
-    var position = 0;
-    var interval = setInterval(frame, 3); // Run the function "frame" for 5000 milliseconds frame is a function that we havent made yet
-    function frame() {
-        // if this position gets up to 350px STOP/Clear the interval of the variable called "interval"
-    if (position == 350) {
-        clearInterval(interval); 
-
-        }else{
-            position++;
-            box.style.top = position + 'px'; // variable "box" is going to be styled to a new top margin = to a new position from the top margin of (how many? px)   
-            box.style.left = position + 'px'; // variable "box" is going to be styled to a new left margin = to a new position from the top margin of (how many? px)    
-        }
-    }
-
-}
 // ======================================== END GLOBAL FUNCTIONS====================================================
 
 // +++++++++++++++++++++++++++++++++++ $100 Questions +++++++++++++++++++++++++++++++++++++++++++++
