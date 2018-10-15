@@ -9,6 +9,7 @@ var audio = new Audio('sound/timesUp.mp3');
 // audio is the sound that plays if you get an answer wrong or dont enter an answer
 var audio2 = new Audio('sound/correct.mp3')
 // audio2 is the sound that plays if you get an answer correct
+var winner = new Audio('sound/applause.mp3')
 // ===================================VARIABLES=========================================================
 
 
@@ -52,11 +53,12 @@ function add100() {
  }
 
  function results(){
-if (pointsBB > 1) {
+if (points > 0) {
+    winner.play()
     swal({
         title: "YOU WIN!",
         text: "Scream it from the rooftops Winner",
-        imageUrl: "https://files.gamebanana.com/img/ico/sprays/594394bd754a7.gif"
+        imageUrl: "https://media1.tenor.com/images/23561371f254987c42955e3cad42941d/tenor.gif?itemid=9762887"
       });
 } else {
     swal({
